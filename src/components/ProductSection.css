@@ -1,0 +1,51 @@
+/* Background */
+.product-section {
+  background-color: #FEF7F0; /* bg-honey-light */
+}
+
+/* Desktop Layout */
+.desktop-only {
+  display: block;
+}
+
+.desktop-container {
+  max-width: 1280px; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 32px 32px;
+}
+
+.desktop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px; /* gap-16 */
+}
+
+/* Mobile Layout */
+.mobile-only {
+  display: none;
+}
+
+.mobile-container {
+  padding: 0 20px; /* px-5 */
+}
+
+.mobile-image {
+  margin-bottom: 32px; /* mb-8 */
+}
+
+.mobile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive Switch */
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}

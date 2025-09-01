@@ -1,0 +1,16 @@
+/* App container */
+.app-container {
+  min-height: 100vh;
+  background-color: #fef9f0; /* light honey background */
+}
+
+/* Mobile only */
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+}

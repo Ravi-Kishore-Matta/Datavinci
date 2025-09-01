@@ -1,0 +1,79 @@
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-4 */
+}
+
+.payment-title {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.875rem; /* text-sm */
+  letter-spacing: 0.15em; /* tracking-widest */
+  text-transform: uppercase;
+}
+
+.payment-container {
+  background-color: #f5f0e1; /* bg-honey-gray */
+  border-radius: 24px; /* rounded-3xl */
+  padding: 20px; /* p-5 */
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-4 */
+}
+
+/* Payment Buttons */
+.payment-button {
+  width: 100%;
+  border-radius: 9999px; /* rounded-full */
+  border: 1px solid #a46f3d; /* border-honey-yellow */
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-button .button-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-button .text-left,
+.payment-button .text-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-button.selected {
+  background-color: #f9d56e; /* honey-yellow */
+  color: white;
+  border-color: #f9d56e;
+}
+
+.payment-button.unselected {
+  background-color: white;
+  color: #a46f3d; /* honey-dark */
+  border-color: #a46f3d;
+}
+
+.payment-button.unselected:hover {
+  background-color: rgba(249, 213, 110, 0.1); /* hover bg-honey-yellow opacity-10 */
+}
+
+/* Subscription info button */
+.subscription-info {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space-x-2 */
+  font-size: 0.875rem; /* text-sm */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.info-icon {
+  width: 16px; /* w-4 */
+  height: 16px; /* h-4 */
+}

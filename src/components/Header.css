@@ -1,0 +1,151 @@
+.header {
+  background-color: #fbe7c6; /* bg-honey-light */
+  border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+/* Desktop */
+.desktop-container {
+  max-width: 1280px; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 16px 32px; /* py-4 px-8 */
+}
+
+.desktop-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left nav */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* space-x-8 */
+}
+
+.nav-button {
+  padding: 12px 24px; /* px-6 py-3 */
+  border: 1px solid #a46f3d; /* border-honey-dark */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.875rem; /* text-sm */
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.15em; /* tracking-widest */
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  color: #a46f3d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+/* Clean text-style nav links (no box) */
+.nav-link {
+  font-size: 1.125rem; /* text-lg */
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;   /* remove button background */
+  border: none;       /* remove border */
+  padding: 0;         /* remove button padding */
+  outline: none;      /* remove focus outline */
+  color: #000;        /* normal text color */
+}
+
+.nav-link:hover {
+  color: #f9d56e; /* honey-yellow */
+}
+
+/* Logo */
+.logo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 64px; /* h-16 */
+}
+
+/* Right nav */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* space-x-4 */
+}
+
+.icon-button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Cart count */
+.cart-button .cart-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #f9d56e; /* honey-yellow */
+  color: #a46f3d; /* honey-dark */
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.75rem;
+}
+
+/* Mobile */
+.mobile-container {
+  padding: 16px 20px;
+}
+
+.mobile-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-logo {
+  height: 44px; /* h-11 */
+}
+
+.mobile-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.mobile .cart-button .cart-count {
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+}
